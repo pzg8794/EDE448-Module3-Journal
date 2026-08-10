@@ -8,47 +8,103 @@ My EDU486 Invisible Invaders camp work gives me another concrete picture of this
 \centering
 \newcommand{\agencybox}[2]{%
   \fcolorbox{PrimaryRed}{SoftBlue}{%
-    \parbox[c][0.64in][c]{1.35in}{\centering\textbf{#1}\\[-0.02in]\small #2}%
+    \parbox[c][0.34in][c]{1.45in}{\centering\textbf{#1}\\[-0.01in]\small #2}%
   }%
 }
 \agencybox{Choose}{site, tool, and role}
-\hspace{0.04in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.04in}
+\hspace{0.01in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.01in}
 \agencybox{Contribute}{question, model, or message}
-\hspace{0.04in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.04in}
+\hspace{0.01in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.01in}
 \agencybox{Advocate}{vote, decline, or teach}
-\hspace{0.04in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.04in}
+\hspace{0.01in}{\color{PrimaryRed}$\longrightarrow$}\hspace{0.01in}
 \agencybox{Redesign}{time, access, and sequence}
-\caption{Adapted from my Module 2 journal, \textit{Who Has More Power After Support?} Invisible Invaders made agency observable through youth decisions and contributions rather than appearance, speech speed, or quiet compliance.}
+\caption{Adapted from my Module 2, \textit{Who Has More Power After Support?} Invisible Invaders made agency observable through youth decisions and contributions, not by appearance, speech speed, or quiet compliance.}
 \label{fig:camp-agency}
 \end{figure}
 
 My Module 3 paper, \textit{Communication That Travels With the Student: A Neurodiversity-Affirming, Culturally and Health Responsive Support Plan}, turned those lessons into a prospective plan for three fictional composite students \citep{garciabautista2026communicationplan}. Mateo made bilingual and culturally sustaining access visible; Eli made speech and multimodal access visible; and Luca made chronic illness, body state, privacy, low speech, and speech-related trauma visible. Their profiles are fictional, while the support strategies are grounded in de-identified camp and placement evidence. Together, the profiles kept me from designing for an abstract ``AAC student.'' A dependable system must survive changes in language, energy, pain, partner, tool, setting, routine, and willingness to speak.
 
-\begin{figure}[!ht]
-\centering
 \begin{tikzpicture}[
-  node distance=0.14in,
-  piece/.style={draw=DeepNavy, rounded corners=2pt, text width=1.58in,
-    minimum height=0.70in, align=center, font=\small, inner sep=3pt},
-  centerpiece/.style={draw=PrimaryRed, line width=0.9pt, rounded corners=2pt, fill=SoftGold,
-    text width=1.55in, minimum height=0.70in, align=center, font=\small\bfseries, inner sep=3pt},
-  flow/.style={-{Latex[length=2.1mm]}, line width=0.75pt, draw=PrimaryRed}
+  piece/.style={
+    draw=DeepNavy,
+    rounded corners=2pt,
+    text width=4.10in,
+    align=center,
+    font=\normalsize,
+    inner xsep=-65pt,
+    inner ysep=1pt
+  },
+  topwide/.style={
+    draw=DeepNavy,
+    rounded corners=2pt,
+    text width=4.10in,
+    align=center,
+    font=\normalsize,
+    inner xsep=-65pt,
+    inner ysep=1pt
+  },
+  bottomwide/.style={
+    draw=DeepNavy,
+    rounded corners=2pt,
+    text width=9.10in,
+    align=center,
+    font=\normalsize,
+    inner xsep=-65pt,
+    inner ysep=1pt
+  },
+  centerpiece/.style={
+    draw=PrimaryRed,
+    line width=0.9pt,
+    rounded corners=2pt,
+    fill=SoftGold,
+    text width=2.15in,
+    align=center,
+    font=\normalsize\bfseries,
+    inner xsep=7pt,
+    inner ysep=1pt
+  },
+  flow/.style={
+    -{Latex[length=2.1mm]},
+    line width=0.75pt,
+    draw=PrimaryRed
+  }
 ]
-\node[centerpiece] (center) {Reliable student authorship};
-\node[piece, fill=SoftBlue, above left=0.14in and 0.17in of center] (mateo) {Mateo\\language + culture};
-\node[piece, fill=SoftGreen, above right=0.14in and 0.17in of center] (eli) {Eli\\speech + multimodal access};
-\node[piece, fill=SoftRose, below=0.20in of center] (luca) {Luca\\health + speech trauma};
-\node[piece, fill=SoftGray, below left=0.14in and 0.17in of center] (partner) {Partner practice\\ask, wait, protect};
-\node[piece, fill=SoftGold, below right=0.14in and 0.17in of center] (family) {Family + home\\what travels};
-\draw[flow] (mateo) -- (center);
-\draw[flow] (eli) -- (center);
-\draw[flow] (luca) -- (center);
-\draw[flow] (partner) -- (center);
-\draw[flow] (family) -- (center);
+
+% Center
+\node[centerpiece] (center)
+  {Reliable student authorship};
+
+% Middle left/right
+\node[piece, fill=SoftGray,
+  left=0.16in of center]
+  (partner) {Partner practice ask, wait, protect};
+
+\node[piece, fill=SoftGold,
+  right=0.16in of center]
+  (family) {Family + home what travels};
+
+% Full-width top left/right
+\node[topwide, fill=SoftBlue,
+  above=0.18in of partner]
+  (mateo) {Mateo language + culture};
+
+\node[topwide, fill=SoftGreen,
+  above=0.18in of family]
+  (eli) {Eli speech + multimodal access};
+
+% Full combined-width bottom
+\node[bottomwide, fill=SoftRose,
+  below=0.28in of center]
+  (luca) {Luca health + speech trauma};
+
+% Connections
+\draw[flow] (mateo.south east) -- (center.north west);
+\draw[flow] (eli.south west) -- (center.north east);
+\draw[flow] (partner.east) -- (center.west);
+\draw[flow] (family.west) -- (center.east);
+\draw[flow] (luca.north) -- (center.south);
+
 \end{tikzpicture}
-\caption{Adapted from \textit{Communication That Travels With the Student}. Reliable authorship depends on language, multimodal access, health, partners, and home continuity rather than on a device alone.}
-\label{fig:puzzle-communication}
-\end{figure}
 
 \Needspace{5\baselineskip}
 That plan also forced adult behavior into the intervention. Premature suggestions can replace a student's idea; taking over work can erase authorship; rigid pacing can make fatigue look like a learner deficit; and visible adult dysregulation can make communication unsafe. Partner training must therefore include asking before helping, keeping hands off student work without permission, waiting, noticing all reliable modes, returning control after assistance, and repairing when adult behavior restricts access.
