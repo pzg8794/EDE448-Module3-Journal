@@ -10,15 +10,15 @@ Module 3 > Journal #3.
 
 **Repository:** [pzg8794/EDE448-Module3-Journal](https://github.com/pzg8794/EDE448-Module3-Journal)
 
-**Publication state:** Authorized GitHub/Overleaf working repository. The
-paper remains under Piter's review and has not been submitted to Blackboard.
+**Publication state:** Submission-ready GitHub/Overleaf review package. The
+paper has not been submitted to Blackboard.
 
 **Documented due date:** August 10, 2026, 11:59 PM EDT
 
 ## Review Status
 
-This is an almost-ready review draft. It has not been submitted through this
-workflow.
+This is a submission-ready review draft. It has not been submitted through
+this workflow.
 
 ## Package Contents
 
@@ -30,12 +30,17 @@ workflow.
 The paper connects Module 3 READ/MEDIA work, the posted TD Snap review and peer
 reply work, the Communication Support Plan, EDE448 Modules 1--2, K--5 teaching
 placement evidence, and EDU486 camp evidence through the Puzzle Plan and
-EQUITAS lenses.
+EQUITAS lenses. Its three conceptual figures carry the argument from Module 2
+agency, through reliable authorship, to Module 3 access-to-agency.
 
 ## Verification
 
 - Compiled locally with TeX Live and BibTeX on August 9, 2026
-- Five pages total in the local review copy
+- Six pages total, including the title page and references
+- Three legible conceptual figures verified in the rendered PDF
+- Exact essential-question wording preserved on the title page
+- The internal READ/MEDIA placeholder was replaced with a cited
+  *Wretches and Jabberers* synthesis grounded in the local course media record
 - No unresolved citations or references in the latest local build
 - Build byproducts are ignored so Overleaf receives a clean source package
 
